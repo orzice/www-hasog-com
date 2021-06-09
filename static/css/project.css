@@ -1,0 +1,120 @@
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 10.24rem;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+	right: 8%;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: .24rem auto;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: .18rem;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.swiper-pagination-bullet {
+	width: .4rem;
+	height: .4rem;
+	text-align: center;
+	line-height: .2rem;
+	font-size: .12rem;
+	color: #000;
+	opacity: 1;
+	background-size: cover;
+	/* background: rgba(0, 0, 0, 0.2); */
+}
+:root {
+	--swiper-theme-color: transparent;
+}
+.swiper-pagination-bullet-active {
+	color: #fff;
+	transform: scale(1.5);
+}
+.introduction {
+	flex: 1;
+}
+.item-left {
+	margin-top: -.3rem;
+	width: 3.1rem;
+	margin-left: 6.6%;
+	text-align: left;
+}
+
+.item-left .title-wrapper img {
+	width: .8rem;
+	height: .8rem;
+}
+
+.item-left .title {
+	margin-top: .32rem;
+	line-height: .32rem;
+	font-size: .28rem;
+	font-weight: 700;
+}
+
+.item-left .desc {
+	margin-top: .24rem;
+	font-size: .16rem;
+	line-height: 1.8;
+}
+
+.item-left .desc a {
+	color: #71b8d0;
+}
+
+@media (max-width: 750px) {
+	.swiper-container {
+		min-width: unset;
+	}
+	.swiper-pagination {
+		display: none;
+	}
+	.swiper-slide {
+		background-position: unset;
+	}
+	.item-left {
+		margin: .1rem auto 0;
+	}
+	.item-left .title-wrapper img {
+		width: .57rem;
+		height: .57rem;
+	}
+	.item-left .title {
+		display: inline-block;
+		margin-top: 0;
+		margin-left: .23rem;
+		line-height: .57rem;
+		vertical-align: middle;
+	}
+}

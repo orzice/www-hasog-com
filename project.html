@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html style="font-size: 100px;">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hasog 幻神科技</title>
+		<meta name="Keywords" content="">
+		<meta name="Description" content="河南幻神网络科技有限公司前身为 许昌市冰尘网络科技有限公司（冰尘网），冰尘网创立于2014年，多年来的技术积累，扎实的基础，曾在一个细分领域内做到行业第一">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/project.css" />
+	</head>
+	<body>
+		<!-- 导航条 -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					 aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo" href="#">
+						<img src="static/imgs/logo.png" alt="幻神科技">
+					</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="./index.html">关于我们</a></li>
+						<li><a href="https://cloud.hasog.com">幻神云平台</a></li>
+						<li><a href="./project.html">我们的产品</a></li>
+						<!-- <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li> -->
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: url(static/imgs/bg2.jpg);">
+					<div class="introduction">
+						<div class="item-left">
+							<div class="title-wrapper">
+								<img src="static/imgs/material_hs.png">
+								<div class="title">HaSog幻神商城</div>
+							</div>
+							<p class="desc">一个高扩展性且十分轻便的开源分销商城系统，以实际运营者的角度进行开发，已覆盖 PC、H5、APP、小程序（微信、QQ），内置HTTP请求处理，随时更改前端页面！软件内置防火墙（开发中）防注入！更加安全！
+								<br ><br >
+								<span>
+									更多信息，请访问： 
+									<span><a href="https://cloud.hasog.com" target="_blank" rel="noopener noreferrer">https://cloud.hasog.com</a></span>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide" style="background-image: url(static/imgs/bg.jpg);">
+					<div class="introduction">
+						<div class="item-left">
+							<div class="title-wrapper">
+								<img src="static/imgs/material_acgice.png">
+								<div class="title">Ci互联</div>
+							</div>
+							<p class="desc">Ci互联（生态）<br>截止目前 已有8个平台 共计500万+用户接入此服务
+								<br ><br >
+								<span>
+									更多信息，请访问： 
+									<span><a href="https://oauth.acgice.com" target="_blank" rel="noopener noreferrer">https://oauth.acgice.com</a></span>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<script src="static/js/jquery-1.11.3.min.js"></script>
+		<script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src="static/swiper/swiper-bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var imgs = ['static/imgs/material_hs2.jpg', 'static/imgs/material_acgice.png'];
+			var swiper = new Swiper('.swiper-container', {
+				direction: 'vertical',
+				slidesPerView: 1,
+				spaceBetween: 0,
+				mousewheel: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					renderBullet: function(index, className) {
+						return '<span class="' + className + '" style="background-image: url(' + imgs[index] + ');"></span>';
+					},
+				},
+			});
+		</script>
+		<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?de2f6361f1fe65154a7bf54c8bed78c9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+	</body>
+</html>
